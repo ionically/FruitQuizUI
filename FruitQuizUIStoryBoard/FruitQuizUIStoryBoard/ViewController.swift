@@ -8,44 +8,48 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var checkMarkIsShown: Bool = true
+    
     @IBOutlet weak var optionOButton: UIButton!
     @IBOutlet weak var optionMButton: UIButton!
     @IBOutlet weak var optionAButton: UIButton!
     @IBOutlet weak var rightClick: UIImageView!
     @IBOutlet weak var FruitImageView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+   
     @IBAction func optionOButtonClick(_ sender: UIButton) {
         
-        Button2()
-        
+        print("X")
     }
     @IBAction func optionMButtonClick(_ sender: UIButton) {
+        print("X")
         
-        Button2()
+        
     }
     
     @IBAction func optionAButtonClick(_ sender: UIButton) {
         
-        Button()
-        
+        if checkMarkIsShown {
+            FruitQuizUIStoryBoard.show()
+            
+        } else {
+            hide()
+        }
+    
+        }
     }
-    
 
-   
-}
-
-
-func Button() {
-    print("check")
-    showLabel
+func show() {
+    checkMarkIsShown = true
     
 }
+func hide() {
+    checkMarkIsShown = false
 
-func Button2() {
-    print("cross")
 }
