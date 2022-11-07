@@ -9,22 +9,43 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var option3Button: UIButton!
-    @IBOutlet weak var option2Button: UIButton!
-    @IBOutlet weak var option1Button: UIButton!
+    @IBOutlet weak var optionOButton: UIButton!
+    @IBOutlet weak var optionMButton: UIButton!
+    @IBOutlet weak var optionAButton: UIButton!
+    @IBOutlet weak var rightClick: UIImageView!
     @IBOutlet weak var FruitImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func option3ButtonClick(_ sender: UIButton) {
+    @IBAction func optionOButtonClick(_ sender: UIButton) {
+        
+        Button2()
+        
     }
-    @IBAction func option2ButtonClick(_ sender: UIButton) {
+    @IBAction func optionMButtonClick(_ sender: UIButton) {
+        
+        Button2()
     }
     
-    @IBAction func option1ButtonClick(_ sender: UIButton) {
+    @IBAction func optionAButtonClick(_ sender: UIButton) {
+        
+        Button()
+        
     }
+    
+
+   
+}
+
+
+func Button() {
+    print("check")
+    showLabel
     
 }
 
+func Button2() {
+    print("cross")
+}
