@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var checkMarkIsShown: Bool = true
+  
     
     @IBOutlet weak var optionOButton: UIButton!
     @IBOutlet weak var optionMButton: UIButton!
@@ -20,9 +20,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hide()
         // Do any additional setup after loading the view.
     }
-   
+    
     @IBAction func optionOButtonClick(_ sender: UIButton) {
         
         print("X")
@@ -35,21 +36,17 @@ class ViewController: UIViewController {
     
     @IBAction func optionAButtonClick(_ sender: UIButton) {
         
-        if checkMarkIsShown {
-            FruitQuizUIStoryBoard.show()
-            
-        } else {
-            hide()
-        }
+       show()
     
-        }
     }
-
-func show() {
-    checkMarkIsShown = true
     
-}
-func hide() {
-    checkMarkIsShown = false
-
+    func show() {
+        rightClick.isHidden = false
+        
+    }
+    func hide() {
+        
+        rightClick.isHidden = true
+       
+    }
 }
