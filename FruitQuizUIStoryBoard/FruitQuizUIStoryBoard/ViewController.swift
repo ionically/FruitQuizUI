@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var option3Button: UIButton!
+    @IBOutlet weak var option2Button: UIButton!
     @IBOutlet weak var option1Button: UIButton!
     @IBOutlet weak var FruitImageView: UIImageView!
     override func viewDidLoad() {
@@ -16,7 +18,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func option3ButtonClick(_ sender: UIButton) {
+    }
+    @IBAction func option2ButtonClick(_ sender: UIButton) {
+    }
+    
     @IBAction func option1ButtonClick(_ sender: UIButton) {
     }
     
