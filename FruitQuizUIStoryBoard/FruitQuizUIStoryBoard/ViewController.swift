@@ -9,8 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-  
-    
     @IBOutlet weak var optionOButton: UIButton!
     @IBOutlet weak var optionMButton: UIButton!
     @IBOutlet weak var optionAButton: UIButton!
@@ -25,28 +23,30 @@ class ViewController: UIViewController {
     }
     
     @IBAction func optionOButtonClick(_ sender: UIButton) {
-        
-        print("X")
+        showCross()
     }
+    
     @IBAction func optionMButtonClick(_ sender: UIButton) {
-        print("X")
-        
-        
+        showCross()
     }
     
     @IBAction func optionAButtonClick(_ sender: UIButton) {
-        
-       show()
-    
+        showTick()
     }
     
-    func show() {
+    func showTick() {
+        rightClick.image = UIImage(systemName: "checkmark.seal.fill")
         rightClick.isHidden = false
-        
+        rightClick.tintColor = UIColor.green
     }
+    
     func hide() {
-        
         rightClick.isHidden = true
-       
+    }
+    
+    func showCross() {
+        rightClick.image = UIImage(systemName: "xmark.circle")
+        rightClick.tintColor = UIColor.red
+        rightClick.isHidden = false
     }
 }
