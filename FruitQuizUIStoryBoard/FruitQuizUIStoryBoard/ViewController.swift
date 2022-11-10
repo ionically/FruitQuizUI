@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // TODO: @chan
+    // TODO: Add Code here
     // make @IBOutlet for Previous button
     // make @IBOutlet for next button
     
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         hide()
         makeQuizData()
         loadFirstQuiz()
-        handleNextPreviousButton()
+        handleLogicNextPreviousButtons()
     }
     
     @IBAction func optionOButtonClick(_ sender: UIButton) {
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         showCross()
     }
     
-    // TODO: @chan
+    // TODO: Add Code here
     // make @IBAction for previous button
     // make @IBAction for next button
     
@@ -82,18 +82,32 @@ class ViewController: UIViewController {
         optionMButton.setTitle(quiz1.buttonMLabel, for: .normal)
     }
     
-    func handleNextPreviousButton() {
+    func handleLogicNextPreviousButtons() {
         if currentQuizIndex == firstIndex {
+            // TODO:
             // hide Previous button
             // show next button
         }  else if currentQuizIndex == lastIndex {
+            // TODO:
             // show Previous button
             // hide next button
         } else {
+            // TODO: 
             // show Previous button
             // show next button
         }
     }
+    
+    // TODO: call this function inside @IBAction of next button
+    func nextLogic() {
+        // increase the value of currentQuizIndex by 1
+    }
+    
+    // TODO: call this function inside @IBAction of previous button
+    func previousLogic() {
+        // decrease the value of currentQuizIndex by 1
+    }
+    
 }
 
 struct SmartQuiz {
