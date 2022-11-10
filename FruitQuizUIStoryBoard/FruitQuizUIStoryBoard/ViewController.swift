@@ -48,9 +48,14 @@ class ViewController: UIViewController {
         showCross()
     }
     
-    // TODO: Add Code here
+    // MARK: Add Code here
     // make @IBAction for previous button
     // make @IBAction for next button
+    
+    @IBAction func previousButton(_ sender: UIButton) {
+    }
+    @IBAction func nextButton(_ sender: Any) {
+    }
     
     func showTick() {
         rightClick.image = UIImage(systemName: "checkmark.seal.fill")
@@ -86,28 +91,28 @@ class ViewController: UIViewController {
     
     func handleLogicNextPreviousButtons() {
         if currentQuizIndex == firstIndex {
-            // TODO:
-            // hide Previous button
-            // show next button
+            // MARK:
+            hidepreviousButton()
+            shownextButton()
         }  else if currentQuizIndex == lastIndex {
             // TODO:
-            // show Previous button
-            // hide next button
+            showpreviousButton()
+            hidenextButton()
         } else {
-            // TODO: 
-            // show Previous button
-            // show next button
+            // MARK:
+            showpreviousButton()
+            shownextButton()
         }
     }
     
     // TODO: call this function inside @IBAction of next button
     func nextLogic() {
-        // increase the value of currentQuizIndex by 1
+        currentQuizIndex > 1
     }
     
     // TODO: call this function inside @IBAction of previous button
     func previousLogic() {
-        // decrease the value of currentQuizIndex by 1
+        currentQuizIndex < 1
     }
     
 }
