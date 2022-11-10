@@ -130,9 +130,11 @@
                     </view>
                     <connections>
                         <outlet property="FruitImageView" destination="mof-Ju-kJo" id="zTw-4X-dbw"/>
+                        <outlet property="nextButton" destination="eoH-5K-Ktt" id="8lJ-yC-hsu"/>
                         <outlet property="optionAButton" destination="4JV-PR-lVf" id="4EU-yD-hyI"/>
                         <outlet property="optionMButton" destination="t8f-e4-RBT" id="aEa-kx-lXi"/>
                         <outlet property="optionOButton" destination="GYy-CB-vJS" id="CoZ-Di-3Ae"/>
+                        <outlet property="previousButton" destination="Mo1-je-x3H" id="ppw-Ou-K6v"/>
                         <outlet property="rightClick" destination="BGO-cB-rNv" id="csm-7G-xvR"/>
                     </connections>
                 </viewController>

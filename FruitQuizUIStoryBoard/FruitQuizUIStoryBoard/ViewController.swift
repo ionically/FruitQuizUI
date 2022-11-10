@@ -9,10 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // TODO: Add Code here
+    // MARK: Add Code here done
     // make @IBOutlet for Previous button
     // make @IBOutlet for next button
     
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var optionOButton: UIButton!
     @IBOutlet weak var optionMButton: UIButton!
     @IBOutlet weak var optionAButton: UIButton!
